@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<title>Exercisi</title>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercici</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Python</h1>
+        <p>Exemple de creació de scripts amb python </p>
+        <div class="content">
+            <p><a href="https://www.learnpython.org/" class="custom-link">Apren python</a></p>
+            <p>Here is another paragraph of text.</p>
+        </div>
+    </header>
+    <h2>Calculadora Binaria</h2>
+    <p>Introdueix un número decimal i et retornaré el seu valor en binari, hexadecimal i octal</p>
+    <div class="code-container">
+        <h3>Decimal, Binary, Hexadecimal, and Octal Conversion</h3>
+        <pre>
+            <code>
+# Decimal to Binary
+num = int(input("Type a decimal number: "))
+binary_num = bin(num)
+print(f"Decimal number is: {num} and in Binary: {binary_num[2:]}")
+
+# Binary to Hexadecimal
+binary_string = binary_num
+decimal_representation = int(binary_string, 2)
+hexadecimal_string = hex(decimal_representation)
+print("Hexadecimal value is:", hexadecimal_string.upper()[2:])
+
+# Binary to Octal
+bnum = binary_num
+onum = int(bnum, 2)
+onum = oct(onum)
+print("Octal value is = ", onum[2:])
+            </code>
+        </pre>
+    </div>
+    <h3>Resultat</h3>
+    <p id="especial" class="class1">Aquest és un exemple de conversió de nombres utilitzant Python.</p>
+    <p class="class1">El codi mostra com convertir un nombre decimal a binari.</p>
+    <p class="class2">També mostra com convertir un nombre binari a hexadecimal i octal.</p>
+    <p class="class2">Assegura't d'introduir un nombre decimal vàlid.</p>
+    <footer>
+        <p class="extra">El resultat es mostrarà en diferents sistemes numèrics.</p>
+
+    </footer>
+</body>
+
+</html>
